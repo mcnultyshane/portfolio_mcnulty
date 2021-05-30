@@ -1,0 +1,19 @@
+/* setting color variables to call to in future */
+:root{
+    --conifer: #7cde4b;
+    --matisse: #1e569b;
+    --jewel: #127142;
+    --tide: #C2B6B0;
+}
+/* setting main color and background color */
+* {
+    background-color: var(--conifer);
+    color: var(--matisse);
+
+}
+
+html {
+    /* seting 1rem to 10px for easier font size value calculations */
+    font-size: 62.5%;
+}
+
