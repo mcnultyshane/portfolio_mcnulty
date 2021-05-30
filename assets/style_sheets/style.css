@@ -3,11 +3,15 @@
     --conifer: #7cde4b;
     --matisse: #1e569b;
     --jewel: #127142;
-    --tide: #C2B6B0;
+    --gin: #e0eae4;
+    --border-bottom: 5px solid #127142;
+    --border-left: 5px solid #127142
+    
+     
 }
 /* setting main color and background color */
-* {
-    background-color: var(--conifer);
+::selection {
+    background-color: var(--gin);
     color: var(--matisse);
 
 }
@@ -17,3 +21,97 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--matisse);
+    background-color: var(--gin);
+    background-color: #cfe7cd;
+    opacity: 1;
+    background-image:  linear-gradient(30deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(150deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(30deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(150deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(60deg, #e0eae477 25%, transparent 25.5%, transparent 75%, #e0eae477 75%, #e0eae477), linear-gradient(60deg, #e0eae477 25%, transparent 25.5%, transparent 75%, #e0eae477 75%, #e0eae477);
+    background-size: 48px 84px;
+    background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+    border-right: 5px solid #127142;
+    margin-right: 1rem;
+
+}
+
+h3 {
+    font-size: 3.0rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2.0rem;
+}
+
+p {
+        margin-bottom: 1rem;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+    width: 96;
+    margin: 0 auto;
+    padding: 2.5rem;
+
+    outline: 2px solid var(--jewel);
+    outline-offset: -2px;
+    transition: all 0.5 ease-in-out;
+}
+nav {
+    outline: 3px solid gold;
+
+    
+}
+link {
+    display:inline-block;
+    padding: 1rem 2rem;
+}
+
+
+
+/* .float-intro img {
+    float: left;
+    margin-right: 1em; */
+}
+
+
+.about_me {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    outline: 3px solid black}
+
+
+.work-projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.project-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    outline: 3px solid orchid;
+    
+
+}
