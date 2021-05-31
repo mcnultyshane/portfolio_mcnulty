@@ -38,6 +38,7 @@ body {
 
 h1 {
     font-size: 4rem;
+    font-weight: 1000;
 }
 
 h2 {
@@ -103,7 +104,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    outline: 3px solid black
+    border-top: 5px solid var(--jewel);
 }
 /* styles for headshot image */
 #headshot {
@@ -115,9 +116,12 @@ header{
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
     margin-left: 1.5rem; 
+    
 }
 
-
+/* #write-up {
+    ;
+} */
 
 
 /* styles for the 'Work' section */
@@ -125,6 +129,8 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    max-width: 50%;
+    border-top: 5px solid var(--jewel);
 }
 
 .project-blocks {
@@ -132,11 +138,50 @@ header{
     flex-wrap: wrap;
     flex-direction: column ;
     /* border; */
-    border: .5rem solid var(--jewel);
-   
-    margin: .5rem, 10rem;
+    border: 5px 8px 8px 5px; 
+    border-style: solid; 
+    border-color: var(--jewel);
+    margin-top: 5px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 5px;
 }
 
+.block-header {
+   color: var(--gin);
+   text-align: center;
+   margin-top: 2rem;
+}
+
+/* work section image styles */
+#main-work-project {
+    background: url(../images/horiseon-screencap.jpg);
+    background-size: cover;
+    height: 25rem;
+    width: 40rem;
+}
+
+#work-project-b {
+    background: url(../images/mini2_screencap_crop.png);
+    background-size: cover;
+    height: 15rem;
+    width: 30rem
+}
+
+#work-project-c {
+    background: url(../images/cosmos1.jfif);
+    background-size: cover;
+}
+
+#work-project-d {
+    background: url(../images/cosmos1.jfif);
+    background-size: cover;
+}
+
+#work-project-e {
+    background: url(../images/cosmos1.jfif);
+    background-size: cover;
+}
 
 /* Styles for the 'Contact' Section */
 
@@ -144,4 +189,5 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    border-top: 5px solid var(--jewel);
 }
