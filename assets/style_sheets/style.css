@@ -91,12 +91,12 @@ header {
 
 /* stylings for hero image */
 .hero {
-    height: 35rem;
+    height: 50rem;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/cosmo2.jpg");
+    background-image: url("../images/dushore-cabin.jpg");
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
 }
 
 /* styles for the 'About Me' section */
@@ -118,10 +118,6 @@ header {
     margin-bottom: 1.5rem;
     margin-left: 1.5rem;
 }
-
-/* #write-up {
-    ;
-} */
 
 
 /* styles for the 'Work' section */
