@@ -38,6 +38,10 @@ body {
 h1 {
     font-size: 4rem;
     font-weight: 1000;
+    color: var(--gin);
+    display: inline-block;
+    text-shadow: 1px 1px black;
+    text-align: center;
 }
 
 h2 {
@@ -67,37 +71,42 @@ p {
 /* styling the <header section> */
 header {
 
-    /* width: 100%; */
     margin: 0 auto;
     padding: 1rem;
-
-    /* outline: 2px solid var(--jewel); */
-    outline-offset: -2px;
-    transition: all 0.5 ease-in-out;
-
+    height: 55rem;
+    width: 100%;
+    background-image: url("../images/dushore-cabin.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
+    text-align: center
     ;
 }
 
-.pagelinks ul {
+.directions {
+    font-display: none;
     display: flex;
-    ;
+    color: var(--gin);
+    
+    flex-wrap: wrap;
+    justify-content: center;
+
+
 }
 
 
 
 /* stylings for hero image */
-.hero {
+/* .hero {
     height: 50rem;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/dushore-cabin.jpg");
+    /* margin-bottom: 25px; */
+    /* background-image: url("../images/dushore-cabin.jpg");
     background-size: cover;
     background-attachment: fixed;
-}
+} */ 
 
 /* styles for the 'About Me' section */
 .about_me {
@@ -127,6 +136,10 @@ header {
     flex-direction: row;
     max-width: 50%;
     border-top: 5px solid var(--jewel);
+}
+
+.project-blocks:hover {
+    opacity: 50%;
 }
 
 .project-blocks {
