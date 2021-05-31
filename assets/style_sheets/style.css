@@ -2,10 +2,10 @@
 :root {
     --conifer: #7cde4b;
     --matisse: #1e569b;
-    --jewel: #127142;
+    --jewel: #67ca99;
     --gin: #e0eae4;
-    --border-bottom: 5px solid #127142;
-    --border-left: 5px solid #127142
+    --border-bottom: 5px solid #67ca99;
+    --border-left: 5px solid #67ca99;
 }
 
 /* setting main color and background color */
@@ -26,13 +26,14 @@ body {
     font-size: 2rem;
     line-height: 1.5;
     color: var(--matisse);
+    
     background-color: var(--gin);
-    background-color: #cfe7cd;
+    /* background-color: #cfe7cd;
     opacity: 1;
     background-image: linear-gradient(30deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(150deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(30deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(150deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(60deg, #e0eae477 25%, transparent 25.5%, transparent 75%, #e0eae477 75%, #e0eae477), linear-gradient(60deg, #e0eae477 25%, transparent 25.5%, transparent 75%, #e0eae477 75%, #e0eae477);
     background-size: 48px 84px;
-    background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px;
-}
+    background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px; */
+} 
 
 
 h1 {
@@ -46,13 +47,17 @@ h1 {
 
 h2 {
     font-size: 3.5rem;
-    border-right: 5px solid #127142;
+    color: rgb(231, 229, 95);
+    text-shadow: 1px 1px gray;
+    border-right: 5px solid var(--jewel);
     margin-right: 1rem;
     padding-right: 1rem;
 }
 
 h3 {
     font-size: 3.0rem;
+    text-shadow: 1px 1px black;
+
 }
 
 h4 {
@@ -70,7 +75,6 @@ p {
 
 /* styling the <header section> */
 header {
-
     margin: 0 auto;
     padding: 1rem;
     height: 55rem;
@@ -81,8 +85,7 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center
-    ;
+    text-align: center;
 }
 
 .directions {
@@ -121,6 +124,7 @@ header {
     border-style: solid;
     border-width: 5px 8px 8px 5px;
     border-color: var(--jewel);
+ 
     border-radius: 2rem;
     margin-top: 1.5rem;
     margin-left: 1.5rem;
@@ -134,7 +138,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    max-width: 50%;
+    max-width: 100%;
     border-top: 5px solid var(--jewel);
 }
 
@@ -194,11 +198,25 @@ header {
 
 /* Styles for the 'Contact' Section */
 
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.contact-info { 
     border-top: 5px solid var(--jewel);
     border-bottom: 5px solid var(--jewel);
     ;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* setting media queries */
+
+@media (min-width:64em) {
+    .hero {
+        background-size: cover;
+        background-position:center;
+      
+    }
 }
