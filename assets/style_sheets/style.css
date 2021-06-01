@@ -26,14 +26,14 @@ body {
     font-size: 2rem;
     line-height: 1.5;
     color: var(--matisse);
-    
+
     background-color: var(--gin);
     /* background-color: #cfe7cd;
     opacity: 1;
     background-image: linear-gradient(30deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(150deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(30deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(150deg, #e0eae4 12%, transparent 12.5%, transparent 87%, #e0eae4 87.5%, #e0eae4), linear-gradient(60deg, #e0eae477 25%, transparent 25.5%, transparent 75%, #e0eae477 75%, #e0eae477), linear-gradient(60deg, #e0eae477 25%, transparent 25.5%, transparent 75%, #e0eae477 75%, #e0eae477);
     background-size: 48px 84px;
     background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px; */
-} 
+}
 
 
 h1 {
@@ -57,7 +57,6 @@ h2 {
 h3 {
     font-size: 3.0rem;
     text-shadow: 1px 1px black;
-
 }
 
 h4 {
@@ -85,36 +84,48 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    font-display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .directions {
     font-display: none;
     display: flex;
-    color: var(--gin);
-    
     flex-wrap: wrap;
-    justify-content: center;
+    color: var(--gin);
 
+}
 
+a:link {
+    text-decoration: none;
+}
+
+#link1 {
+    padding: 2rem 2rem .5rem .5rem;
+    font-weight: bold;
+    color: var(--gin)
+}
+
+#link2 {
+    padding: 2rem 2rem .5rem .5rem;
+    font-weight: bold;
+}
+
+#link3 {
+    padding: 2rem 2rem .5rem .5rem;
+    font-weight: bold;
 }
 
 
 
-/* stylings for hero image */
-/* .hero {
-    height: 50rem;
-    width: 100%;
-    /* margin-bottom: 25px; */
-    /* background-image: url("../images/dushore-cabin.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-} */ 
 
 /* styles for the 'About Me' section */
 .about_me {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     border-top: 5px solid var(--jewel);
 }
@@ -124,32 +135,41 @@ header {
     border-style: solid;
     border-width: 5px 8px 8px 5px;
     border-color: var(--jewel);
- 
+
     border-radius: 2rem;
-    margin-top: 1.5rem;
+    margin-top: .5rem;
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
+    margin-right: 3rem;
+    float: left;
+}
+#write-up {
+    margin-right: 4.5rem;
 }
 
 
 /* styles for the 'Work' section */
 .work-projects {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     max-width: 100%;
     border-top: 5px solid var(--jewel);
 }
 
+
+
 .project-blocks:hover {
     opacity: 50%;
 }
 
-.project-blocks {
+.project-windows {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
+}
+.project-blocks {
+   
     /* border; */
     border: 5px 8px 8px 5px;
     border-style: solid;
@@ -170,38 +190,45 @@ header {
 #main-work-project {
     background: url(../images/horiseon-screencap.jpg);
     background-size: cover;
+    width:fit-content;
     height: 25rem;
-    width: 40rem;
+    width: 70rem;
 }
 
 #work-project-b {
     background: url(../images/mini2_screencap_crop.png);
     background-size: cover;
     height: 15rem;
-    width: 30rem
+    width: 49%
 }
 
 #work-project-c {
     background: url(../images/cosmos1.jfif);
     background-size: cover;
+    width: 49%
 }
 
 #work-project-d {
     background: url(../images/cosmos1.jfif);
     background-size: cover;
+    width: 49%
 }
 
 #work-project-e {
     background: url(../images/cosmos1.jfif);
     background-size: cover;
+    width: 49%
 }
 
 /* Styles for the 'Contact' Section */
 
-.contact-info { 
+.contact-info {
     border-top: 5px solid var(--jewel);
     border-bottom: 5px solid var(--jewel);
-    ;
+    font-display: none;
+    display: flex;
+    flex-wrap: nowrap;
+    
 }
 
 .contact-links {
@@ -211,12 +238,24 @@ header {
     justify-content: center;
 }
 
+#email {
+    padding: 2rem;
+}
+
+#github {
+    padding: 2rem;
+}
+
+#phone {
+    padding: 2rem;
+}
+
 /* setting media queries */
 
 @media (min-width:64em) {
     .hero {
         background-size: cover;
-        background-position:center;
-      
+        background-position: center;
+
     }
 }
