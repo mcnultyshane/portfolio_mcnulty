@@ -179,7 +179,7 @@ a:link {
 
 
 #about-me-title {
-    min-width: 20%;
+    width: 20%;
 }
 
 
@@ -215,9 +215,6 @@ a:link {
     margin-right: 5px;
     
 } 
-.section-content-titles {
-    width: 25%;
-}
 
 .block-header {
     color: var(--gin);
@@ -231,19 +228,13 @@ a:link {
     background: url(../images/horiseon-screencap.jpg);
     background-size: cover;
     height: 25rem;
-    width: 500px;
+ 
     
     
 }
-/* 
- .secondary-projects {
-    display: flex;
-    flex-wrap: wrap;
+#work-title {
+    width: 20%;
 }
-
-.secondary-projects > * {
-    flex: 1 1 160px 
-}  */
 
 #work-project-b {
     background: url(../images/mini2_screencap_crop.png);
@@ -278,15 +269,18 @@ a:link {
     border-bottom: 5px solid var(--jewel);
     font-display: none;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     
 }
 
 .contact-links {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
+}
+#contact-title{
+    width: 20%;
 }
 
 #email {
@@ -303,10 +297,3 @@ a:link {
 
 /* setting media queries */
 
-@media (min-width:64em) {
-    .hero {
-        background-size: cover;
-        background-position: center;
-
-    }
-}
