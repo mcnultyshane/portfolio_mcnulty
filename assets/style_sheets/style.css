@@ -35,6 +35,13 @@ body {
     background-position: 0 0, 0 0, 24px 42px, 24px 42px, 0 0, 24px 42px; */
 }
 
+a {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
 
 h1 {
     font-size: 4rem;
@@ -130,6 +137,18 @@ a:link {
     border-top: 5px solid var(--jewel);
 }
 
+.generic {
+    float: left;
+    width: 50%;
+    padding: .5rem;
+}
+
+.about_me::after {
+    content: "";
+    clear: both;
+    /* display: table; */
+}
+
 /* styles for headshot image */
 #headshot {
     border-style: solid;
@@ -152,11 +171,12 @@ a:link {
 /* styles for the 'Work' section */
 .work-projects {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    max-width: 100%;
+    /* max-width: 100%; */
     border-top: 5px solid var(--jewel);
+    
+
 }
+
 
 #about-me-title {
     min-width: 20%;
@@ -167,11 +187,22 @@ a:link {
     opacity: 50%;
 }
 
+
+
 .project-windows {
+    float: left;
+    padding: 1rem;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+
 }
+
+.project-windows > * {
+    padding: 10px;
+    flex: 1 1 160px;
+  }
+
 .project-blocks {
    
     /* border; */
@@ -182,6 +213,10 @@ a:link {
     margin-bottom: 8px;
     margin-left: 8px;
     margin-right: 5px;
+    
+} 
+.section-content-titles {
+    width: 25%;
 }
 
 .block-header {
@@ -191,41 +226,49 @@ a:link {
 }
 
 /* work section image styles */
-#work-title {
-    min-width: 33%;
-}
 
 #main-work-project {
     background: url(../images/horiseon-screencap.jpg);
     background-size: cover;
-    width:fit-content;
     height: 25rem;
-    width: 66%;
+    width: 500px;
+    
+    
 }
+/* 
+ .secondary-projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondary-projects > * {
+    flex: 1 1 160px 
+}  */
 
 #work-project-b {
     background: url(../images/mini2_screencap_crop.png);
     background-size: cover;
-    height: 15rem;
-    width: 49%
+    height: 15rem;   
 }
 
 #work-project-c {
     background: url(../images/cosmos1.jfif);
-    background-size: cover;
-    width: 49%
+    background-size: cover;  
 }
 
 #work-project-d {
     background: url(../images/cosmos1.jfif);
     background-size: cover;
-    width: 49%
+  
+    
+    
 }
 
 #work-project-e {
     background: url(../images/cosmos1.jfif);
     background-size: cover;
-    width: 49%
+   
+   
 }
 
 /* Styles for the 'Contact' Section */
