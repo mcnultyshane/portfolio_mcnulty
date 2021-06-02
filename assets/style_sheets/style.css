@@ -56,9 +56,10 @@ h2 {
     font-size: 3.5rem;
     color: rgb(231, 229, 95);
     text-shadow: 1px 1px gray;
-    border-right: 5px solid var(--jewel);
+    border-right: 2px solid var(--jewel);
     margin-right: 1rem;
     padding-right: 1rem;
+    text-align: right;
 }
 
 h3 {
@@ -68,10 +69,14 @@ h3 {
 
 h4 {
     font-size: 2.5rem;
+    
 }
 
 h5 {
     font-size: 2.0rem;
+    text-align: center;
+    color: var(--matisse);
+    
 }
 
 p {
@@ -177,16 +182,13 @@ a:link {
 
 }
 
-
 #about-me-title {
     width: 20%;
 }
 
-
 .project-blocks:hover {
     opacity: 50%;
 }
-
 
 
 .project-windows {
@@ -227,11 +229,10 @@ a:link {
 #main-work-project {
     background: url(../images/horiseon-screencap.jpg);
     background-size: cover;
-    height: 25rem;
- 
-    
-    
+    /* height: 25rem */
 }
+
+   
 #work-title {
     width: 20%;
 }
@@ -239,7 +240,7 @@ a:link {
 #work-project-b {
     background: url(../images/mini2_screencap_crop.png);
     background-size: cover;
-    height: 15rem;   
+    /* height: 15rem;    */
 }
 
 #work-project-c {
@@ -274,11 +275,14 @@ a:link {
 }
 
 .contact-links {
+    font-display: none;
+    color: rgb(231, 229, 95);
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: center;
+    
 }
+
 #contact-title{
     width: 20%;
 }
@@ -297,3 +301,9 @@ a:link {
 
 /* setting media queries */
 
+    @media screen and (max-width: 768px) {
+        main {
+          flex-direction: column;
+        }
+    }
+       
