@@ -145,6 +145,7 @@ a:link {
 }
 #write-up {
     margin-right: 4.5rem;
+    max-width: 66%;
 }
 
 
@@ -157,6 +158,9 @@ a:link {
     border-top: 5px solid var(--jewel);
 }
 
+#about-me-title {
+    min-width: 20%;
+}
 
 
 .project-blocks:hover {
@@ -187,12 +191,16 @@ a:link {
 }
 
 /* work section image styles */
+#work-title {
+    min-width: 33%;
+}
+
 #main-work-project {
     background: url(../images/horiseon-screencap.jpg);
     background-size: cover;
     width:fit-content;
     height: 25rem;
-    width: 70rem;
+    width: 66%;
 }
 
 #work-project-b {
