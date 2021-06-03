@@ -175,7 +175,13 @@ a:link {
 }
 .project-windows figure:hover {
     opacity: 50%;
+
 }
+.project-windows > * {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 12 160px;
+  }
 #work-project-a {
     background: url(..//portfolio_mcnulty/assets/images/horiseon-screencap.jpg);
     background-size: cover;
@@ -281,15 +287,18 @@ h3.block-header
   }
 
   /* setting media queries */
-/* @media screen and (min-width:381px  ) {
-   .box1 {
-        display: block;
-      
-        }  
-    .box8 {
-            display: flex;
-            width: 100%;  
-    } */
+@media screen and (max-width: 768) {
+   header,
+   main {
+       flex-direction: column;
+   }
+   
+   section .box10 {
+       order: 2;
+       background-color: red;
+   }
 
-    
-}
+   section .box6 {
+       order:2;
+   }
+}   
