@@ -183,7 +183,7 @@ a:link {
     flex: 1 12 160px;
   }
 #work-project-a {
-    background: url(..//portfolio_mcnulty/assets/images/horiseon-screencap.jpg);
+    background: url(../images/horiseon-screencap.jpg);
     background-size: cover;
     height:500px;
     width: 1000px;
@@ -195,7 +195,7 @@ a:link {
 
 }
 #work-project-b {
-    background: url(../portfolio_mcnulty/assets/images/mini2_screencap.png);
+    background: url(../images/mini2_screencap.png);
     background-size: cover;
     position: relative;
     flex: 48%;
@@ -206,7 +206,7 @@ a:link {
 }
 
 #work-project-c {
-    background: url(../portfolio_mcnulty/assets/images/cosmo2.jpg);
+    background: url(../images/cosmo2.jpg);
     background-size: cover;
     position: relative;
     flex: 48%;
@@ -216,7 +216,7 @@ a:link {
 }
 
 #work-project-d {
-    background: url(../portfolio_mcnulty/assets/images/cosmo2.jpg);
+    background: url(../images/cosmo2.jpg);
     background-size: cover; 
     position: relative;
     flex: 48%;
@@ -226,7 +226,7 @@ a:link {
 }
 
 #work-project-e {
-    background: url(../portfolio_mcnulty/assets/images/cosmo2.jpg);
+    background: url(../images/cosmo2.jpg);
     background-size: cover; 
     position: relative;
     flex: 48%;
