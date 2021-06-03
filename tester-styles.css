@@ -287,7 +287,7 @@ h3.block-header
   }
 
   /* setting media queries */
-@media screen and (max-width: 768) {
+/ @media screen and (max-width: 768) {
    header,
    main {
        flex-direction: column;
@@ -295,10 +295,19 @@ h3.block-header
    
    section .box10 {
        order: 2;
-       background-color: red;
    }
 
    section .box6 {
        order:2;
    }
 }   
+/* @media all and (min-width: 800px) {
+    .main { flex: 3 0px; }
+    .box2 { order: 1; } 
+    .box9 { order: 2; }
+    .box10 { order: 3; }
+    .box11 { order: 4; }
+    .box6 {order: 5; }
+    .box12 {order: 6; }
+    .box13 {order: 13; }
+  }  */
