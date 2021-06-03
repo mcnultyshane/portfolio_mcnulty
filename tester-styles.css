@@ -5,10 +5,17 @@
 html {
     /* seting 1rem to 10px for easier font size value calculations */
     font-size: 62.5%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 body, html {
     height: 100%;
     margin: 0;
+   
+}
+body {
+ 
 }
 /* styling main elements of the page */
 .box1 {
@@ -118,9 +125,9 @@ a:link {
 }
 .text {
     background-color: cornflowerblue;
+    font-style: italic;
     color: lavender;
-    font:large;
-    font-weight: bolder;
+    box-shadow: black;
     position: absolute;
     bottom: 8px;
     right: 16px;
@@ -161,7 +168,8 @@ a:link {
     display: flex;
     flex-wrap: wrap;
     flex: 100%;
-    flex-grow: 1 1;
+    flex-grow: 1;
+
 
 
 }
@@ -272,3 +280,16 @@ h3.block-header
     opacity: 0.8;
   }
 
+  /* setting media queries */
+/* @media screen and (min-width:381px  ) {
+   .box1 {
+        display: block;
+      
+        }  
+    .box8 {
+            display: flex;
+            width: 100%;  
+    } */
+
+    
+}
