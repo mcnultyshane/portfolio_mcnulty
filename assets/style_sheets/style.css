@@ -116,8 +116,8 @@ a:link {
 
 /* styles for image */
 .hero-text {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../portfolio_mcnulty/assets/images/dushore-cabin.jpg);
-  height: 40%;
+  height: 40%;  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/dushore-cabin.jpg);
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
